@@ -4,9 +4,9 @@ A static portfolio for GitHub Pages with three parts:
 
 | Part | Path | What it does |
 | --- | --- | --- |
-| **Site** | `/` | Dark/light editorial design, bento project grid, project drawer with live GitHub stats, demo room, events, about, contact. |
+| **Site** | `/portfolio/` | Dark/light editorial design, bento project grid, project drawer with live GitHub stats, demo room, events, about, contact. |
 | **Undi, the AI agent** | `assets/js/agent.js` | A tool-calling agent on GitHub Models. It scrolls the page, filters and opens projects, reads live repos and READMEs, plays demos, switches the theme and drafts emails. With no model endpoint set, an offline rule-based agent uses the same tools. |
-| **Studio (admin)** | `/admin/` | A CMS backed by git. Edit every section, upload images, import repos from GitHub, preview drafts, then publish. Publishing commits `content.json`, and Pages redeploys. |
+| **Studio (admin)** | `/portfolio/admin/` | A CMS backed by git. Edit every section, upload images, import repos from GitHub, preview drafts, then publish. Publishing commits `content.json`, and Pages redeploys. |
 
 All content lives in **`content.json`**. You don't need to edit HTML.
 
@@ -20,11 +20,11 @@ The site has to be served over HTTP, because opening `index.html` directly can't
 
 ## Deploy (GitHub Pages)
 
-The repo is named `AubreyUndiPhiri.github.io`, so GitHub Pages serves it at **https://aubreyundiphiri.github.io/** from the `main` branch. No build step is needed. If you use a different repo name, turn Pages on under **Settings → Pages → Deploy from a branch → main / root**.
+The repo is named `portfolio`, so GitHub Pages serves it at **https://aubreyundiphiri.github.io/portfolio/** from the `main` branch. Pages is configured to deploy from the `main` branch root. No build step is needed.
 
 ## Use the admin (Studio)
 
-1. Go to `https://aubreyundiphiri.github.io/admin/`.
+1. Go to `https://aubreyundiphiri.github.io/portfolio/admin/`.
 2. Create a [fine-grained token](https://github.com/settings/personal-access-tokens/new) with access to **only this repository** and these permissions: **Contents: Read & write** and **Pages: Read**.
 3. Paste the token and sign in. Edit, preview, then press **Publish**. The site updates in about a minute.
 

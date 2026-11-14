@@ -60,7 +60,7 @@
 
   /* ---------------------------------------------------------------- login */
   async function initLogin() {
-    let defaults = { repoOwner: "AubreyUndiPhiri", repoName: "AubreyUndiPhiri.github.io", branch: "main" };
+    let defaults = { repoOwner: "AubreyUndiPhiri", repoName: "portfolio", branch: "main" };
     try { const c = await fetch("../content.json", { cache: "no-cache" }).then(r => r.json()); defaults = { ...defaults, ...c.site }; S.local = c; } catch {}
     const f = $("[data-login]");
     let saved = null;
