@@ -1,6 +1,5 @@
 # Aubrey Undi Phiri — Portfolio
-https://aubreyundiphiri.github.io/portfolio/admin/
-https://aubreyundiphiri.github.io/portfolio
+
 
 | Part | Path | What it does |
 | --- | --- | --- |
