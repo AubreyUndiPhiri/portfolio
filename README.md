@@ -1,6 +1,6 @@
 # Aubrey Undi Phiri — Portfolio
-
-A static portfolio for GitHub Pages with three parts:
+https://aubreyundiphiri.github.io/portfolio/admin/
+https://aubreyundiphiri.github.io/portfolio
 
 | Part | Path | What it does |
 | --- | --- | --- |
