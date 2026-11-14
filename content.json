@@ -20,14 +20,14 @@
     "aboutTitle": "Data is the medium.",
     "aboutAccent": "People are the point.",
     "about": [
-      "I'm drawn to questions that don't have obvious answers — from listening for asthma in breathing audio to making AI feel genuinely useful for a lodge in Livingstone. I like getting hands-on, learning in public, and making complicated ideas easier to explore.",
-      "My training at the African Institute for Mathematical Sciences (AIMS) grounded me in statistics, machine learning, topological data analysis and big-data systems. Today I build AI agents and run practical AI trainings for teams across Zambia."
+      "I’m a data and artificial intelligence specialist. I’ve worked as a Data and AI Associate at BongoHive Technology and Innovation Hub and BongoHive AI Lab. I hold an MSc in Mathematical Sciences from AIMS Rwanda and a BSc in Mathematics with Physics Education from the University of Zambia.",
+      "I take data work end to end: collecting and cleaning data, building pipelines, training predictive models, deploying LLM-based agents, and turning results into BI dashboards that decision-makers can use.",
+      "My work includes Njila.ai, a World Bank-supported national AI pilot; a deployed AI concierge in hospitality; and an AI-driven data diagnostic system for a consulting firm. My strong foundation in mathematics and analytics, together with years of teaching experience, helps me explain complex results clearly to technical and non-technical audiences."
     ],
     "stats": [
       { "value": "1st", "label": "AI concierge agent in Zambian hospitality" },
       { "value": "10+", "label": "ML & data projects shipped on GitHub" },
-      { "value": "4", "label": "AI trainings & events led" },
-      { "value": "AIMS", "label": "Mathematical sciences training" }
+      { "value": "4", "label": "AI trainings & events led" }
     ],
     "skills": ["Python", "R", "PyTorch", "scikit-learn", "Apache Spark", "LLM agents", "Topological data analysis", "Audio signal processing", "Computer vision", "Statistical learning", "SQL", "Prompt engineering"]
   },
