@@ -1,0 +1,250 @@
+{
+  "site": {
+    "repoOwner": "AubreyUndiPhiri",
+    "repoName": "AubreyUndiPhiri.github.io",
+    "branch": "main"
+  },
+  "profile": {
+    "name": "Aubrey Undi Phiri",
+    "shortName": "Aubrey",
+    "role": "Data scientist & AI builder",
+    "location": "Made in Malawi · Working across Africa",
+    "availability": "Open to collaborations & AI projects",
+    "eyebrow": "Data science · Machine learning · AI agents",
+    "headline": "I turn curious questions into",
+    "headlineAccent": "useful things.",
+    "intro": "Hey, I'm Aubrey — a data scientist and AI builder trained at AIMS. I work in the space between complex data and tools that make a real difference: health signals, mobility at scale, and AI agents that serve real people.",
+    "email": "phiri.undi@aims.ac.rw",
+    "linkedin": "https://www.linkedin.com/in/aubrey-undi-phiri-667a9911a/",
+    "github": "https://github.com/AubreyUndiPhiri",
+    "aboutTitle": "Data is the medium.",
+    "aboutAccent": "People are the point.",
+    "about": [
+      "I'm drawn to questions that don't have obvious answers — from listening for asthma in breathing audio to making AI feel genuinely useful for a lodge in Livingstone. I like getting hands-on, learning in public, and making complicated ideas easier to explore.",
+      "My training at the African Institute for Mathematical Sciences (AIMS) grounded me in statistics, machine learning, topological data analysis and big-data systems. Today I build AI agents and run practical AI trainings for teams across Zambia."
+    ],
+    "stats": [
+      { "value": "1st", "label": "AI concierge agent in Zambian hospitality" },
+      { "value": "10+", "label": "ML & data projects shipped on GitHub" },
+      { "value": "4", "label": "AI trainings & events led" },
+      { "value": "AIMS", "label": "Mathematical sciences training" }
+    ],
+    "skills": ["Python", "R", "PyTorch", "scikit-learn", "Apache Spark", "LLM agents", "Topological data analysis", "Audio signal processing", "Computer vision", "Statistical learning", "SQL", "Prompt engineering"]
+  },
+  "projects": [
+    {
+      "id": "asthma",
+      "title": "Listening for asthma",
+      "repo": "Asthma-detection-from-human-breathing-Audio-Dataset-",
+      "category": "Health AI · audio",
+      "year": "2025",
+      "description": "Classifying normal vs. asthmatic breathing from raw audio — turning each recording into signal features, persistent entropy and Betti curves, then letting the models listen.",
+      "highlights": ["Audio → spectral & topological features", "Persistent homology (Betti numbers, entropy)", "Binary classification of breathing sounds"],
+      "tags": ["Audio signals", "Topological data", "Classification"],
+      "filters": ["ai", "health"],
+      "art": "asthma",
+      "image": "",
+      "featured": true,
+      "fork": false
+    },
+    {
+      "id": "breast-cancer",
+      "title": "Reading breast-tissue images",
+      "repo": "Breast-Cancer-Detection-from-features-of-breast-tissue-Images",
+      "category": "Health AI · classification",
+      "year": "2025",
+      "description": "A logistic-regression model that predicts whether a tumour is malignant or benign from features extracted from breast-tissue images — built for interpretability, not just accuracy.",
+      "highlights": ["Logistic regression, end to end", "Feature analysis of cell-nucleus measurements", "Malignant vs. benign prediction"],
+      "tags": ["Logistic regression", "Medical imaging", "Jupyter"],
+      "filters": ["ai", "health"],
+      "art": "breast",
+      "image": "",
+      "featured": true,
+      "fork": false
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility, at scale",
+      "repo": "Mobility-Big-Data-Analysis-and-processing-with-Apache-Spark-projects",
+      "category": "Big data · Apache Spark",
+      "year": "2025",
+      "description": "Processing and analysing large mobility datasets with Apache Spark — distributed transformations, aggregations and the patterns hiding in how people move.",
+      "highlights": ["Distributed processing with PySpark", "Large-scale mobility aggregation", "Exploratory analysis of movement patterns"],
+      "tags": ["Apache Spark", "Big data", "PySpark"],
+      "filters": ["data"],
+      "art": "mobility",
+      "image": "",
+      "featured": true,
+      "fork": false
+    },
+    {
+      "id": "neural-nets",
+      "title": "Intro to Neural Nets — AIMS 2025",
+      "repo": "Intro-to-Neural-Nets-AIMS-2025",
+      "category": "Deep learning · coursework",
+      "year": "2025",
+      "description": "Hands-on neural-network labs from the AIMS 2025 course: building networks from first principles, backpropagation, optimisation and training deep models in practice.",
+      "highlights": ["Networks from first principles", "Backprop & optimisation", "Hands-on training labs"],
+      "tags": ["Neural networks", "PyTorch", "Jupyter"],
+      "filters": ["ai"],
+      "art": "neural",
+      "image": "",
+      "featured": true,
+      "fork": true
+    },
+    {
+      "id": "face-recognition",
+      "title": "Real-time face recognition",
+      "repo": "Real_time-face-recognition-ML",
+      "category": "Computer vision · Python",
+      "year": "2025",
+      "description": "A real-time face-recognition pipeline in Python: detect faces in a live video stream, encode them, and match identities frame by frame.",
+      "highlights": ["Live webcam detection", "Face embeddings & matching", "Real-time inference loop"],
+      "tags": ["Computer vision", "Python", "Real-time ML"],
+      "filters": ["ai"],
+      "art": "face",
+      "image": "",
+      "featured": true,
+      "fork": true
+    },
+    {
+      "id": "dna",
+      "title": "Finding signals in DNA",
+      "repo": "DNA_Transcription_Factor--Binding-Predictor-Using-CNN-and-KMeans-Features",
+      "category": "Machine learning · bioinformatics",
+      "year": "2025",
+      "description": "Classifying DNA sequences as binding or non-binding for a transcription factor, combining a convolutional network with K-means feature exploration.",
+      "highlights": ["1D CNN over one-hot DNA", "K-means motif features", "Binding-site prediction"],
+      "tags": ["CNN", "K-means", "Bioinformatics"],
+      "filters": ["ai", "health"],
+      "art": "dna",
+      "image": "",
+      "featured": false,
+      "fork": false
+    },
+    {
+      "id": "sml-comparison",
+      "title": "Microarrays & digits: comparing learners",
+      "repo": "Comparing-Machine-Learning-tasks-using-RStudio",
+      "category": "Statistical learning · R",
+      "year": "2024",
+      "description": "kNN vs. classification trees on prostate-cancer DNA microarrays (n ≪ p) and kNN on MNIST — Kruskal-Wallis screening, ROC curves, 100 stochastic hold-out splits and ANOVA on test errors.",
+      "highlights": ["Kruskal-Wallis variable screening", "ROC curves & replicated hold-out", "ANOVA on test errors"],
+      "tags": ["R", "kNN", "Decision trees"],
+      "filters": ["data", "health"],
+      "art": "stats",
+      "image": "",
+      "featured": false,
+      "fork": false
+    },
+    {
+      "id": "academic-performance",
+      "title": "Predicting first-year performance",
+      "repo": "Prediction-of-First-Year-Academic-Performance-using-Logistic-Regression-and-Discriminant-Analysis",
+      "category": "Statistical learning · education",
+      "year": "2025",
+      "description": "Logistic regression and discriminant analysis to predict first-year academic outcomes — and to understand which factors actually matter.",
+      "highlights": ["Logistic regression", "LDA / QDA", "Model comparison"],
+      "tags": ["Logistic regression", "Discriminant analysis", "Jupyter"],
+      "filters": ["data"],
+      "art": "stats",
+      "image": "",
+      "featured": false,
+      "fork": false
+    },
+    {
+      "id": "tda",
+      "title": "Topological data analysis",
+      "repo": "TOPOLOGICAL-DATA_ANALYSIS",
+      "category": "Mathematics · data",
+      "year": "2025",
+      "description": "Persistent homology in practice — finding the shape of data with simplicial complexes, barcodes and persistence diagrams.",
+      "highlights": ["Persistent homology", "Barcodes & diagrams", "Shape-aware features"],
+      "tags": ["TDA", "Persistent homology", "Python"],
+      "filters": ["data"],
+      "art": "neural",
+      "image": "",
+      "featured": false,
+      "fork": false
+    },
+    {
+      "id": "rsa",
+      "title": "Algebra & cryptography: RSA",
+      "repo": "Algebra-And-Cryptography-RSA-Encryption",
+      "category": "Mathematics · cryptography",
+      "year": "2025",
+      "description": "Implementing RSA encryption from the number theory up — modular arithmetic, key generation, encryption and decryption.",
+      "highlights": ["Modular arithmetic", "Key generation", "Encrypt / decrypt"],
+      "tags": ["Cryptography", "Number theory", "Python"],
+      "filters": ["data"],
+      "art": "stats",
+      "image": "",
+      "featured": false,
+      "fork": false
+    }
+  ],
+  "clientWork": [
+    {
+      "id": "nkosi",
+      "title": "Nkosi AI",
+      "kicker": "Live in hospitality · Zambia",
+      "lead": "A first-of-its-kind AI concierge at The Nkhosi Livingstone Lodge and Spa.",
+      "description": "Designed and built to help guests get answers around the clock, make food and spa reservations, arrange transport, and plan activities for their stay — without needing to stop by the front desk for every question.",
+      "features": ["24/7 guest support", "Reservations & activities", "Website chatbot"],
+      "date": "Launched · 29 April 2026",
+      "link": "https://lnkd.in/p/dw6tfcdh",
+      "secondaryLink": "https://lnkd.in/p/dYJjtiuH",
+      "images": [
+        "https://media.licdn.com/dms/image/v2/D4D22AQG99nxYsBZlzQ/feedshare-shrink_800/B4DZ33uG5NI4Ak-/0/1777977553041?e=2147483647&v=beta&t=Mxs3Cwi3cUQHd8OhtFRFMx9imPdt7I-xC9HQA641nsM",
+        "https://media.licdn.com/dms/image/v2/D4D22AQG_AnnoL1M1Ng/feedshare-shrink_800/B4DZ3y7KW6JAAc-/0/1777897088855?e=2147483647&v=beta&t=WY5y3Ri7yXGzTELub4JArndZqZeLdwIyF4uF7lVbf48"
+      ]
+    }
+  ],
+  "demos": [
+    { "id": "nkosi-demo", "title": "Nkosi AI, in action", "detail": "Meet the AI concierge at Nkhosi Livingstone Lodge and Spa.", "embedUrl": "", "art": "neural" },
+    { "id": "asthma-demo", "title": "Listening for asthma", "detail": "From breathing audio to a diagnosis signal.", "embedUrl": "", "art": "asthma" },
+    { "id": "face-demo", "title": "Faces, in real time", "detail": "Live detection and recognition, frame by frame.", "embedUrl": "", "art": "face" },
+    { "id": "spark-demo", "title": "A Spark of scale", "detail": "Mobility data, in motion.", "embedUrl": "", "art": "mobility" }
+  ],
+  "events": [
+    {
+      "id": "show-and-tell",
+      "type": "AI event · hosted",
+      "title": "AI Show & Tell",
+      "description": "A space for curiosity, real conversations, and sharing what AI can look like in practice.",
+      "link": "https://lnkd.in/p/d73EmGXW",
+      "featured": true
+    },
+    {
+      "id": "skills2live",
+      "type": "Training",
+      "title": "AI for work & opportunity",
+      "description": "A career talk at Skills2Live Zambia's Tech Expo, with practical examples across different trades.",
+      "link": "https://lnkd.in/p/dgYdmDvP",
+      "featured": false
+    },
+    {
+      "id": "spectrum",
+      "type": "Training",
+      "title": "Practical AI for Spectrum Credit",
+      "description": "AI, digital tools, and innovation training focused on productivity and solving business challenges.",
+      "link": "https://lnkd.in/p/dUPAuiBs",
+      "featured": false
+    },
+    {
+      "id": "ignite",
+      "type": "Training",
+      "title": "Building AI agents, hands-on",
+      "description": "With BongoHive IGNITE startups: a live build of a free AI email-responder agent, from scratch.",
+      "link": "https://lnkd.in/p/dxKYJm5p",
+      "featured": false
+    }
+  ],
+  "assistant": {
+    "name": "Undi",
+    "endpoint": "",
+    "greeting": "Hi, I'm Undi — Aubrey's AI agent. I can walk you through his work, open projects, pull live repos from GitHub, or draft a message to him. What are you curious about?",
+    "suggestions": ["What's Aubrey's strongest health-AI work?", "Tell me about Nkosi AI", "Show me the big-data projects", "I'd like to hire Aubrey"],
+    "knowledge": "Aubrey is open to freelance AI agent builds, data science consulting, and AI training for teams. He prefers to be contacted by email or LinkedIn. He builds practical, low-cost AI systems that work well in African contexts."
+  }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Studio — Aubrey Undi Phiri</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23c6f36b'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' fill='%230b0f0d' text-anchor='middle'%3Es%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <link rel="stylesheet" href="admin.css">
+    <script>try { const t = localStorage.getItem("aup-theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+    <script src="admin.js" defer></script>
+  </head>
+  <body class="studio">
+    <!-- Sign in -->
+    <section class="login" data-view="login">
+      <div class="login-card">
+        <div class="login-brand"><span class="wordmark-mark">a<span>.</span></span><div><strong>Studio</strong><span>Portfolio admin</span></div></div>
+        <h1>Welcome back, <em>Aubrey.</em></h1>
+        <p class="muted">Sign in with a GitHub token that can write to your portfolio repository. Every change you publish becomes a commit, and GitHub Pages redeploys the site within about a minute.</p>
+        <form data-login>
+          <div class="row">
+            <label>Owner<input name="owner" required></label>
+            <label>Repository<input name="repo" required></label>
+          </div>
+          <label>Branch<input name="branch" value="main" required></label>
+          <label>GitHub token
+            <input name="token" type="password" placeholder="github_pat_…" autocomplete="off" required>
+          </label>
+          <label class="check"><input type="checkbox" name="remember"> Remember on this device</label>
+          <button class="button button-primary" type="submit">Sign in with GitHub</button>
+          <p class="form-error" data-login-error role="alert"></p>
+        </form>
+        <details class="help">
+          <summary>How do I create the token?</summary>
+          <ol>
+            <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub → Fine-grained tokens</a>.</li>
+            <li>Repository access: <strong>Only select repositories</strong> → your portfolio repo.</li>
+            <li>Permissions → Repository → <strong>Contents: Read and write</strong> (and <strong>Pages: Read</strong> for deploy status).</li>
+            <li>Generate, copy, paste above. It stays in this browser only.</li>
+          </ol>
+        </details>
+        <button class="link-button" type="button" data-offline>Or edit offline and export JSON →</button>
+      </div>
+    </section>
+
+    <!-- App -->
+    <div class="app" data-view="app" hidden>
+      <aside class="side">
+        <div class="side-brand"><span class="wordmark-mark">a<span>.</span></span><div><strong>Studio</strong><span data-repo-label></span></div></div>
+        <nav class="side-nav" data-nav>
+          <button data-tab="overview" class="is-active"><i>◎</i>Overview</button>
+          <button data-tab="profile"><i>☺</i>Profile & hero</button>
+          <button data-tab="projects"><i>▦</i>Projects</button>
+          <button data-tab="clientWork"><i>★</i>Client work</button>
+          <button data-tab="demos"><i>▶</i>Demo room</button>
+          <button data-tab="events"><i>✳</i>Events & training</button>
+          <button data-tab="assistant"><i>◉</i>AI agent</button>
+          <button data-tab="media"><i>▣</i>Media library</button>
+          <button data-tab="json"><i>{}</i>Raw JSON</button>
+        </nav>
+        <div class="side-foot">
+          <div class="user" data-user></div>
+          <button class="link-button" type="button" data-signout>Sign out</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1 data-title>Overview</h1>
+            <span class="save-state" data-save-state>All changes published</span>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme">
+              <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+            </button>
+            <button class="button button-ghost" type="button" data-discard>Discard</button>
+            <a class="button button-ghost" href="../?preview=draft" target="_blank" rel="noopener">Preview ↗</a>
+            <button class="button button-primary" type="button" data-publish>Publish</button>
+          </div>
+        </header>
+        <div class="panel" data-panel></div>
+      </main>
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+    <dialog class="modal" data-import-dialog>
+      <div class="modal-head"><h2>Import from GitHub</h2><button type="button" data-close aria-label="Close">×</button></div>
+      <input class="modal-search" type="search" placeholder="Filter repositories…" data-import-filter>
+      <div class="import-list" data-import-list><p class="muted">Loading repositories…</p></div>
+    </dialog>
+  </body>
+</html>

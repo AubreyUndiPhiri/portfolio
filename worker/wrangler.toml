@@ -1,0 +1,11 @@
+name = "undi-agent"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Origins allowed to call the proxy (your GitHub Pages URL; add a custom domain here if you use one).
+ALLOWED_ORIGINS = "https://aubreyundiphiri.github.io,http://localhost:8080,http://127.0.0.1:8080"
+MODEL = "openai/gpt-4.1-mini"
+FALLBACK_MODEL = "openai/gpt-4o-mini"
+
+# Secret (never commit it):  npx wrangler secret put GITHUB_TOKEN

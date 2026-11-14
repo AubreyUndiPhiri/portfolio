@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0f0d">
+    <meta name="description" content="Aubrey Undi Phiri — data scientist and AI builder turning curious questions into useful, human-centred tools.">
+    <meta property="og:title" content="Aubrey Undi Phiri — Data, made useful.">
+    <meta property="og:description" content="Data scientist & AI builder. Health AI, big data, and AI agents serving real people.">
+    <meta property="og:type" content="website">
+    <title>Aubrey Undi Phiri — Data, made useful.</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230b0f0d'/%3E%3Ctext x='29' y='44' font-family='Arial' font-weight='700' font-size='34' fill='%23f3f1e8' text-anchor='middle'%3Ea%3C/text%3E%3Ccircle cx='47' cy='41' r='4' fill='%23c6f36b'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script>
+      try { const t = localStorage.getItem("aup-theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+    </script>
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/agent.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Home">
+        <span class="wordmark-mark">a<span>.</span></span>
+        <span class="wordmark-name" data-bind="profile.name">Aubrey Undi Phiri</span>
+      </a>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#client-work">Client</a>
+        <a href="#demos">Demos</a>
+        <a href="#community">Community</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="ask-pill" type="button" data-open-agent>
+          <span class="ask-orb" aria-hidden="true"></span> Ask Undi <kbd>⌘K</kbd>
+        </button>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle light and dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+        </button>
+        <a class="button button-primary header-cta" href="#contact">Let's talk</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <canvas class="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <p class="eyebrow reveal"><span class="live-dot"></span><span data-bind="profile.availability">Open to collaborations</span></p>
+          <h1 id="hero-title" class="hero-title reveal">
+            <span data-bind="profile.headline">I turn curious questions into</span>
+            <em data-bind="profile.headlineAccent">useful things.</em>
+          </h1>
+          <div class="hero-bottom">
+            <p class="hero-intro reveal" data-bind="profile.intro"></p>
+            <form class="hero-agent reveal" data-hero-agent autocomplete="off">
+              <label class="sr-only" for="hero-agent-input">Ask Aubrey's AI agent a question</label>
+              <span class="ask-orb" aria-hidden="true"></span>
+              <input id="hero-agent-input" name="q" type="text" placeholder="Ask my AI agent anything about my work…" maxlength="400">
+              <button type="submit" aria-label="Ask"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              <div class="hero-agent-chips" data-hero-suggestions></div>
+            </form>
+          </div>
+          <div class="hero-meta reveal">
+            <span data-bind="profile.role">Data scientist & AI builder</span>
+            <span class="meta-line"></span>
+            <span data-bind="profile.location">Working across Africa</span>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#work" aria-label="Scroll to work"><span></span></a>
+      </section>
+
+      <!-- STATS + MARQUEE -->
+      <section class="stats wrap" aria-label="Highlights">
+        <div class="stats-grid" data-stats></div>
+      </section>
+      <div class="marquee" aria-label="Skills and tools">
+        <div class="marquee-track" data-marquee></div>
+      </div>
+
+      <!-- WORK -->
+      <section class="section wrap" id="work" aria-labelledby="work-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="section-num">01</span> Selected work</p>
+            <h2 id="work-title" class="reveal">Projects that <em>listen, see & scale.</em></h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects" data-filters>
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI & ML</button>
+            <button class="filter" type="button" data-filter="health" aria-pressed="false">Health</button>
+            <button class="filter" type="button" data-filter="data" aria-pressed="false">Data & stats</button>
+          </div>
+        </div>
+        <div class="bento" id="project-grid" aria-live="polite"></div>
+
+        <div class="archive">
+          <div class="archive-head">
+            <h3>More from the lab</h3>
+            <a class="text-link" data-bind-href="profile.github" href="https://github.com/AubreyUndiPhiri?tab=repositories" target="_blank" rel="noopener noreferrer">Everything on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <ol class="archive-list" id="archive-list"></ol>
+        </div>
+      </section>
+
+      <!-- CLIENT WORK -->
+      <section class="section wrap" id="client-work" aria-labelledby="client-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="section-num">02</span> Client work</p>
+            <h2 id="client-title" class="reveal">Built for the <em>real world.</em></h2>
+          </div>
+          <p class="section-aside">AI out in the world, serving real guests — not a demo in a notebook.</p>
+        </div>
+        <div id="client-list"></div>
+      </section>
+
+      <!-- DEMOS -->
+      <section class="section demos" id="demos" aria-labelledby="demo-title">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow"><span class="section-num">03</span> Demo room</p>
+              <h2 id="demo-title" class="reveal">Less talk, <em>more show.</em></h2>
+            </div>
+            <p class="section-aside">Screen recordings, walkthroughs and behind-the-build moments. New reels land here as they're ready.</p>
+          </div>
+          <div class="demo-grid" id="demo-grid"></div>
+        </div>
+      </section>
+
+      <!-- COMMUNITY -->
+      <section class="section wrap" id="community" aria-labelledby="community-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="section-num">04</span> Community & training</p>
+            <h2 id="community-title" class="reveal">Sharing the <em>know-how.</em></h2>
+          </div>
+          <p class="section-aside">Making AI more human, one room at a time.</p>
+        </div>
+        <div class="events" id="event-list"></div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section wrap about" id="about" aria-labelledby="about-title">
+        <div class="about-card reveal" aria-hidden="true">
+          <span class="about-label">A note to self</span>
+          <p>Stay<br>curious.<br><em>Build with</em><br>purpose.</p>
+          <span class="about-sign">— <span data-bind="profile.shortName">Aubrey</span></span>
+          <span class="about-star">✳</span>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow"><span class="section-num">05</span> The person behind the projects</p>
+          <h2 id="about-title" class="reveal"><span data-bind="profile.aboutTitle"></span><br><em data-bind="profile.aboutAccent"></em></h2>
+          <div data-about></div>
+          <div class="skill-cloud" data-skills></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-inner">
+          <p class="eyebrow"><span class="section-num">06</span> Have a good question?</p>
+          <h2 id="contact-title" class="reveal">Let's make<br><em>something matter.</em></h2>
+          <p class="contact-copy">Have a project, a collaboration idea, or just want to talk data? Send a note — or let my agent draft it for you.</p>
+          <div class="contact-actions">
+            <a class="button button-primary magnetic" data-bind-mailto="profile.email" href="mailto:phiri.undi@aims.ac.rw">Email <span data-bind="profile.shortName">Aubrey</span> <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost magnetic" data-bind-href="profile.linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <button class="button button-ghost magnetic" type="button" data-open-agent data-agent-prompt="Help me write a message to Aubrey about working together.">Draft it with Undi <span aria-hidden="true">✳</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <a class="wordmark" href="#top"><span class="wordmark-mark">a<span>.</span></span><span class="wordmark-name" data-bind="profile.name"></span></a>
+      <span class="footer-note">Made with curiosity, in Malawi <span aria-hidden="true">✳</span></span>
+      <div class="footer-links">
+        <a data-bind-href="profile.github" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a data-bind-href="profile.linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a data-bind-mailto="profile.email" href="#">Email</a>
+      </div>
+      <span class="copyright">© <span id="year"></span> AUP</span>
+    </footer>
+
+    <!-- Project drawer -->
+    <dialog class="drawer" id="project-drawer" aria-labelledby="drawer-title">
+      <div class="drawer-inner">
+        <button class="drawer-close" type="button" data-close aria-label="Close">×</button>
+        <div class="drawer-body"></div>
+      </div>
+    </dialog>
+
+    <!-- Video dialog -->
+    <dialog class="video-dialog" aria-label="Demo video">
+      <div class="video-dialog-head"><span class="video-caption"></span><button type="button" data-close aria-label="Close video">×</button></div>
+      <div class="video-frame"></div>
+    </dialog>
+
+    <!-- Agent -->
+    <button class="agent-launcher" type="button" data-open-agent aria-label="Open Aubrey's AI agent">
+      <span class="ask-orb ask-orb-lg" aria-hidden="true"></span>
+      <span class="agent-launcher-label">Ask Undi</span>
+    </button>
+    <section class="agent" id="agent" aria-label="AI agent" hidden>
+      <header class="agent-head">
+        <span class="ask-orb ask-orb-lg" aria-hidden="true"></span>
+        <div>
+          <strong data-agent-name>Undi</strong>
+          <span class="agent-status" data-agent-status>Aubrey's AI agent</span>
+        </div>
+        <button class="agent-icon" type="button" data-agent-reset aria-label="Start a new conversation" title="New conversation">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg>
+        </button>
+        <button class="agent-icon" type="button" data-agent-close aria-label="Close agent">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="agent-log" data-agent-log aria-live="polite"></div>
+      <div class="agent-suggestions" data-agent-suggestions></div>
+      <form class="agent-form" data-agent-form autocomplete="off">
+        <label class="sr-only" for="agent-input">Message</label>
+        <textarea id="agent-input" rows="1" maxlength="800" placeholder="Ask about projects, skills, or hiring…"></textarea>
+        <button type="submit" aria-label="Send"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+      <p class="agent-foot">Agent can navigate this site, open projects & fetch live GitHub data.</p>
+    </section>
+  </body>
+</html>
