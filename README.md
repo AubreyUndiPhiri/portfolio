@@ -19,7 +19,7 @@ The site has to be served over HTTP, because opening `index.html` directly can't
 
 ## Deploy (GitHub Pages)
 
-The repo is named `portfolio`, so GitHub Pages serves it at **https://aubreyundiphiri.github.io/portfolio/** from the `main` branch. Pages is configured to deploy from the `main` branch root. No build step is needed.
+The repo is named `portfolio`, so GitHub Pages serves it at **https://aubreyundiphiri.github.io/portfolio/** from the `main` branch. Pages is configured to deploy from the `main` branch root. No build step is needed. After enabling Pages or changing its source, check **Actions → pages build and deployment** for a successful run; the URL may take a few minutes to become available.
 
 ## Use the admin (Studio)
 
